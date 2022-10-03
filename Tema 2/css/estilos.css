@@ -1,0 +1,17 @@
+h1 {
+    color: rgb(0, 140, 255);
+}
+
+
+.rojo {
+    background-color: red;
+    color:white;
+}
+
+#unico {
+    background-color: green;
+    color:white;
+    padding:10px;
+    border:red 1x solid;
+
+}
