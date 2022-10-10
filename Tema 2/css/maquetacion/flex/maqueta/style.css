@@ -1,0 +1,117 @@
+* {
+   background-color: aqua;
+   margin:0;
+}
+
+.contenedor {
+   display: flex;
+   background-color: rgb(208, 221, 159);
+   width: 100%;
+   margin:auto;
+   flex-wrap: wrap;
+   border:1px solid red;
+   align-items: baseline;
+}
+
+.encabezado {
+   display: flex;
+   margin:auto;
+   width: 100%;
+   /* display:inline-block; */
+   border: 1px solid black; 
+   align-items: center;
+}
+.logo {
+   flex-basis:100px;
+   display:flex;
+   justify-content: center;
+   
+}
+
+.titulo {
+   width: 700px;
+   text-align: center;
+   font-size: 30px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#escudo{
+   width:40px;
+
+   
+}
+.seccion {
+   display: flex;
+   margin:auto;
+   width: 100%;
+   
+   border: 1px solid black; 
+   align-items: center;
+}
+.izquierda{
+   background-color: aqua;
+   flex-basis:250px;
+   
+
+  
+}
+.contenido{
+   background-color: rgb(208, 221, 159);
+   border: 1px solid black;
+   padding:10px;
+}
+
+ul.menuvertical {
+   list-style: none;
+   display: flex;
+   padding: 0;
+   border-left: 1px solid #7C7C7C;
+   flex-direction: column;
+}
+ul.menuvertical li a {
+   padding: 5px;
+   display: block;
+}
+
+ul.menuvertical li a:link,
+ul.menuvertical li a:visited {
+   margin: 2px;
+   text-decoration: none;
+   color: #333;
+   background: #F4F4F4;
+   border-top: 1px solid #7C7C7C;
+   border-right: 1px solid #7C7C7C;
+   border-bottom: 1px solid #9C9C9C;
+}
+
+ul.menuvertical li a:hover {
+   background-color: #FC0;
+}
+
+ul.menuhorizontal{
+   visibility: hidden;
+   width: auto;
+   border-left: 1px solid #7C7C7C;
+}
+ul.menuhorizontal li {
+   text-align: center;
+   width: auto;
+   display: inline;
+   
+}
+ul.menuhorizontal li a:link,
+ul.menuhorizontal li a:visited
+{
+   padding: .3em;
+   
+   text-decoration: none;
+   color: #333;
+   background: #F4F4F4;
+   border-top: 1px solid #7C7C7C;
+   border-right: 1px solid #7C7C7C;
+   border-bottom: 1px solid #9C9C9C;
+   
+}
+ul.menuhorizontal li a:hover{
+   background-color: #FC0;
+}
