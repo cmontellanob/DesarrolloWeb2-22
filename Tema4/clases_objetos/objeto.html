@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        coche={
+            marca:"Ford",
+            modelo:"Focus",
+            color:"Rojo",
+            mostrar: function(){
+                document.write("Marca: " + this.marca + "<br> Modelo:"+this.modelo+"<br> Color:"+this.color);
+            }
+        }
+        coche.mostrar();
+        // convierte un objeto a JSON
+        json=JSON.stringify(coche);
+        // convierte un JSON a objeto
+        coche2=JSON.parse(json);
+
+        console.log(coche);
+        console.log(json);
+        console.log(coche2);
+    </script>
+    
+</body>
+</html>

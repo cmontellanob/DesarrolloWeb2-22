@@ -1,4 +1,7 @@
-<?php 
+<?php include('verificar.php'); 
+include('permiso.php'); ?>
+
+
 include("conexion.php");
 $id=$_POST['id'];
 $nombre=$_POST['nombre'];

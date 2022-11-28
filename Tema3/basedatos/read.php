@@ -1,3 +1,5 @@
+<?php include('verificar.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +19,9 @@
 </head>
 
 <body><?php
+        echo "bienvenido:".$_SESSION['nombres'];
+
+
         include("conexion.php");
 
         $sql = "SELECT id,nombre,descripcion,precio,categoria FROM productos";
@@ -42,9 +47,10 @@
                     <td><?php echo $row["precio"]; ?></td>
                     <td><?php echo $row["categoria"]; ?></td>
                     <td>
+                    <?php if ($_SESSION['nivel'] == 1) { ?>
                         <a href="formEditarProducto.php?id=<?php echo $row["id"]; ?>"><img src="images/editar.png" alt=""> Editar</a>
                         <a href="delete.php?id=<?php echo $row["id"]; ?>"><img src="images/eliminar.png" alt=""> Eliminar</a>
-                        
+                    <?php } ?>    
                 </tr>
             <?php  } ?>
         </table>
@@ -53,8 +59,10 @@
         } else {
             echo "No tiene productos";
         }
-    ?>
-    <a href="formProductos.html">Crear Producto</a>
+    
+    if ($_SESSION['nivel']==1) {?>
+    <a href="formProducto.php">Crear Producto</a>
+    <?php } ?>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-<?php
+<?php include('verificar.php');
 include("conexion.php");
 $id=$_GET['id'];
 $sql = "DELETE  FROM productos WHERE id=$id";
