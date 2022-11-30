@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="registrar.php" method="POST" id="formulario">
+        <label for="nombre">nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="apellidos">apellidos</label>
+        <input type="text" name="apellidos" id="apellidos">
+        <label for="edad">edad</label>
+        <input type="number" name="edad" id="edad">
+        <label for="email">email</label>
+        <input type="email" name="email" id="email">
+        <label for="telefono">telefono</label>
+        <input type="tel" name="telefono" id="telefono">
+        <input type="button" onclick="validarForm()" value="Enviar">
+
+    </form>
+
+
+    <script>
+        function validarForm() {
+            var formulario = document.getElementById("formulario");
+            if (formulario.nombre.value.length == 0) { //comprueba que no esté vacío
+                formulario.nombre.focus();
+                alert('No has escrito tu nombre');
+                return false; //devolvemos el foco
+            }
+            if (formulario.apellidos.value.length == 0) { //comprueba que no esté vacío
+                formulario.apellidos.focus();
+                alert('No has escrito tu apellido');
+                return false; //devolvemos el foco
+            }
+	
+            formulario.submit();
+            return true;
+        }
+    </script>
+</body>
+
+</html>

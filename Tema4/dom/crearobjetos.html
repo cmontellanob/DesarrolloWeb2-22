@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Lista de utiles</h3>
+    <input type="texto" id="util">
+    <button id="boton">Añadir</button>
+    <ul id="lista">
+
+    </ul>
+
+    <script>
+        var boton=document.getElementById("boton");
+        var lista=document.getElementById("lista");
+        var util=document.getElementById("util");
+        boton.addEventListener("click",function(){
+            if (util.value!=""){
+            var li=document.createElement("li");  //crea un elemento li
+            li.innerHTML=util.value;
+            lista.appendChild(li); // añadir al final de la lista
+            }
+            else
+
+            {
+                alert("Introduce un valor");
+            }
+        });
+    </script>
+
+</body>
+</html>

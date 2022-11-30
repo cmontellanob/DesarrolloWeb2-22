@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p onmouseover="pintar()" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et tenetur officia quae vitae assumenda praesentium fuga ex, repudiandae perferendis mollitia a obcaecati iusto, voluptate alias ipsa, aspernatur asperiores veritatis perspiciatis!</p>
+<p>Iusto, sapiente, temporibus voluptatibus officiis ipsa fuga fugit commodi nisi voluptates soluta laudantium odit quas odio, saepe quibusdam debitis optio eveniet nostrum consequatur sed? Ut ipsam minus at cupiditate omnis.</p>
+<p>Similique earum sunt laudantium suscipit ullam, quod, in dicta minima aspernatur aliquid officiis rem assumenda quidem corrupti provident maxime nisi eligendi magni asperiores excepturi repellat, consequuntur autem. Voluptas, architecto dolor!</p>
+<p>Veniam ipsam inventore illo velit culpa dicta eos assumenda itaque eligendi voluptate praesentium quos veritatis, fuga, nesciunt error nisi aliquam ducimus doloremque id nam amet ex. Quod illo necessitatibus aspernatur.</p>
+<p>Aperiam mollitia ab nostrum, explicabo quam possimus eaque consequatur ipsum aliquam voluptatibus adipisci sed cum cumque. Nisi cumque soluta saepe. Mollitia nemo beatae consequatur officia velit voluptate voluptatum nisi voluptatem.</p>
+<p>Repellendus iusto officiis esse dignissimos nulla assumenda molestiae, sapiente rerum voluptatibus ad! Ipsum aspernatur natus beatae alias aut libero quas ad magni, dolores ex, cumque obcaecati accusantium incidunt corrupti soluta.</p>
+<button onclick="contar()">Contar Parrafos</button>
+<script>
+    function contar(){
+     var parrafos=document.getElementsByTagName("p");
+     alert(parrafos.length);
+     
+    }
+    function pintar(){
+        var parrafos=document.getElementsByTagName("p");
+            parrafos[0].style.backgroundColor="red";
+    }
+     
+     
+</script>
+</body>
+</html>
