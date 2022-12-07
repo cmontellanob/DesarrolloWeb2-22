@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ajax.js"></script>
+    <style>
+        .cabeza{
+            background-color: red;
+            color: aliceblue;
+            text-align: center;
+            font-size: 30px;
+            width: 100%;
+            height: 100px;
+        }
+        .nav{
+            background-color: rgb(212, 212, 85)    ;
+            width: 100%;
+            height: 100px;
+        }
+        .menu{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="cabeza"> ESta es la cabecera</div>  
+    <div class="nav">
+        <ul class="menu">
+            <li><a href="index.html">yo</a></li>
+            <li><a href="javascript:cargarContenido('mifamilia.html')">mi familia</a></li>
+            <li><a href="javascript:cargarContenido('misamigos.html')">mis aguigos</a></li>
+            <li><a href="javascript:cargarContenido('miciudad.html')">mi ciudad</a></li>
+            <li><a href="javascript:cargarContenido('mensaje.html')">enviame un mensaje</a></li>
+        </ul>
+    </div>
+    <div id="contenido">
+        <ul>
+            <li>Nombres: CArlos</li>
+            <li>Apellidos; Montellano</li>
+            <li>Edad: 47</li>
+            <li>Sexo: Masculino</li>
+
+        </ul>
+    </div>
+    
+</body>
+</html>

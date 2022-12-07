@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate atque, asperiores esse eum, deleniti commodi eligendi quas obcaecati animi placeat minima optio alias? Nulla quam vitae fuga. Repudiandae, tenetur. Reprehenderit.</p>
+<p>Autem pariatur odit ad quibusdam, modi culpa obcaecati maiores saepe veniam aspernatur cumque, perspiciatis ab distinctio sint praesentium quae, deserunt magnam. Dignissimos, magnam. Voluptas eius dolorum aliquid dolorem placeat temporibus.</p>
+<p>Excepturi dolores beatae quaerat corrupti tempore, quis pariatur enim assumenda quae, nam nemo animi non sapiente facere. Commodi dicta sunt laboriosam quas reprehenderit, nemo similique sed laborum nam quasi fugiat.</p>
+<p>Nesciunt, iste, iusto error voluptate tenetur a temporibus maxime quo cumque tempore illum quam reprehenderit debitis veritatis laboriosam dignissimos odit! Fuga laboriosam voluptatem sed pariatur rem corrupti! Aliquid, sapiente natus.</p>
+<p>Placeat enim molestias necessitatibus odit quam corporis. Delectus, saepe dolorum facere libero deserunt veniam neque necessitatibus reiciendis! Ex, corrupti? Adipisci non dolores cumque sequi sit placeat accusamus ad similique et.</p>
+<p>Accusamus temporibus sit impedit odio ipsum reiciendis, ipsa doloribus earum! Laudantium maxime qui, nisi doloremque consequuntur modi. Quisquam natus earum in tempora facere, at voluptatem veniam deleniti harum consequuntur perferendis!</p>
+<p>Hic itaque placeat vel perspiciatis temporibus ducimus quam reprehenderit laboriosam ratione dolores, dicta iste asperiores ut atque molestiae eligendi ipsa. Odio adipisci animi ad maxime, vel harum consequatur ipsum ea.</p>
+<p>Eos eligendi porro iure optio deleniti doloremque, quaerat quas voluptas modi fugiat cumque expedita delectus recusandae amet, a obcaecati vitae necessitatibus quod magni id officia est laudantium, veniam animi. Explicabo.</p>
+<p>A voluptatem id omnis accusantium aspernatur corrupti non necessitatibus, nemo quasi hic repellat maiores expedita, dolorem dolor reprehenderit itaque vitae impedit tempora excepturi inventore. Iure at quo doloribus cupiditate ipsum.</p>
+<p>Repellat debitis error esse iusto inventore recusandae eveniet unde harum. Nemo ipsam hic est, distinctio beatae aut fugit sunt praesentium velit incidunt placeat, nobis numquam nisi itaque cum ad suscipit!</p>
+<button onclick="ocultarMostrarImpar()">Ocultar</button>
+ 
+<script>
+    ocultar=false;
+    function ocultarMostrarImpar() {
+        var parrafos = document.getElementsByTagName("p");
+        for (var i = 0; i < parrafos.length; i++) {
+            if (i % 2 == 1) {
+                if (ocultar) {
+                    parrafos[i].style.display = "block";
+                }
+                else {
+                    parrafos[i].style.display = "none";
+                }
+                
+            }
+        }
+        ocultar=!ocultar;
+    }
+</script> 
+</body>
+</html>
